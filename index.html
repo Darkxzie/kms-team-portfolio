@@ -564,6 +564,39 @@
       margin-top: 18px;
     }
 
+    .profile-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .profile-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(58, 42, 27, 0.12);
+      background: rgba(255, 250, 242, 0.72);
+      color: var(--text);
+      font-weight: 800;
+      font-size: 0.92rem;
+      transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+    }
+
+    .profile-link:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 24px rgba(31, 27, 23, 0.12);
+      background: rgba(173, 92, 47, 0.12);
+    }
+
+    .profile-link:focus-visible {
+      outline: 3px solid rgba(173, 92, 47, 0.35);
+      outline-offset: 2px;
+    }
+
     .tag {
       padding: 8px 12px;
       border-radius: 999px;
@@ -977,14 +1010,21 @@
       <div class="profiles">
         <article class="profile-card">
           <div class="profile-photo">
-            <img src="assets/kamal.jpg" alt="Portrait of Kamal Manchenella" loading="lazy" />
+            <img
+              src="assets/kamal.jpg"
+              alt="Portrait of Kamal Manchenella"
+              loading="lazy"
+              decoding="async"
+              width="720"
+              height="720"
+            />
           </div>
           <div class="profile-head">
             <div>
               <div class="profile-role">AI Research Focus</div>
               <h3>Kamal Manchenella</h3>
             </div>
-            <div class="avatar">KM</div>
+            <div class="avatar" aria-hidden="true">KM</div>
           </div>
           <p><strong>College:</strong> BITS Pilani Goa Campus</p>
           <p><strong>Interest Area:</strong> Machine Learning, Deep Learning, AI Research</p>
@@ -995,18 +1035,36 @@
             <span class="tag">Research</span>
             <span class="tag">Writing</span>
           </div>
+          <div class="profile-links">
+            <a
+              class="profile-link"
+              href="https://code.swecha.org/Kamel/kamel/-/blob/main/README.md"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              README
+              <span aria-hidden="true">-&gt;</span>
+            </a>
+          </div>
         </article>
 
         <article class="profile-card">
           <div class="profile-photo">
-            <img src="assets/madhura.jpeg" alt="Portrait of Madhura Bhattu" loading="lazy" />
+            <img
+              src="assets/madhura.jpeg"
+              alt="Portrait of Madhura Bhattu"
+              loading="lazy"
+              decoding="async"
+              width="720"
+              height="720"
+            />
           </div>
           <div class="profile-head">
             <div>
               <div class="profile-role">Embedded + AI Focus</div>
               <h3>Madhura Bhattu</h3>
             </div>
-            <div class="avatar">MB</div>
+            <div class="avatar" aria-hidden="true">MB</div>
           </div>
           <p><strong>College:</strong> BITS Pilani Goa Campus</p>
           <p><strong>Interest Area:</strong> Embedded Systems, AIML, Biomedical Electronics</p>
@@ -1017,18 +1075,36 @@
             <span class="tag">AIML</span>
             <span class="tag">Design</span>
           </div>
+          <div class="profile-links">
+            <a
+              class="profile-link"
+              href="https://code.swecha.org/madhura1/madhura1/-/blob/main/README.md"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              README
+              <span aria-hidden="true">-&gt;</span>
+            </a>
+          </div>
         </article>
 
         <article class="profile-card">
           <div class="profile-photo">
-            <img src="assets/sid.jpeg" alt="Portrait of Siddharth Chukka" loading="lazy" />
+            <img
+              src="assets/sid.jpeg"
+              alt="Portrait of Siddharth Chukka"
+              loading="lazy"
+              decoding="async"
+              width="720"
+              height="720"
+            />
           </div>
           <div class="profile-head">
             <div>
               <div class="profile-role">Full-Stack Systems Focus</div>
               <h3>Siddharth Chukka</h3>
             </div>
-            <div class="avatar">SC</div>
+            <div class="avatar" aria-hidden="true">SC</div>
           </div>
           <p><strong>College:</strong> BITS Pilani Goa Campus</p>
           <p><strong>Interest Area:</strong> Full-stack Development, AI, Databases</p>
@@ -1038,6 +1114,17 @@
             <span class="tag">Frontend</span>
             <span class="tag">Databases</span>
             <span class="tag">Systems</span>
+          </div>
+          <div class="profile-links">
+            <a
+              class="profile-link"
+              href="https://code.swecha.org/sidgif-529/sidgif-529/-/blob/main/ReadME.md"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              README
+              <span aria-hidden="true">-&gt;</span>
+            </a>
           </div>
         </article>
       </div>
